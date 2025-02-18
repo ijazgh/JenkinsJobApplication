@@ -13,7 +13,7 @@ public class JenkinsJobApplication {
 	//public static Logger logger = (Logger)	LogFactory.getLog(JenkinsJobApplication.class);
     @PostConstruct
 	public void init(){
-		System.out.println("Welome to JenkinsJobApplication!");
+		System.out.println("Welome to Jenkins First Job Application!");
 		//logger.info("Welome to JenkinsJobApplication!");
 	}
 	public static void main(String[] args) {
