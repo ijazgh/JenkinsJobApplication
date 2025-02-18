@@ -10,10 +10,11 @@ import java.util.logging.Logger;
 @SpringBootApplication
 public class JenkinsJobApplication {
 
-	public static Logger logger = (Logger)	LogFactory.getLog(JenkinsJobApplication.class);
+	//public static Logger logger = (Logger)	LogFactory.getLog(JenkinsJobApplication.class);
     @PostConstruct
 	public void init(){
-		logger.info("Welome to JenkinsJobApplication!");
+		System.out.println("Welome to JenkinsJobApplication!");
+		//logger.info("Welome to JenkinsJobApplication!");
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(JenkinsJobApplication.class, args);
