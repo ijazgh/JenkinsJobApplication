@@ -1,22 +1,27 @@
 package com.chtech.JenkinsJobApplication;
 
 import jakarta.annotation.PostConstruct;
-import org.apache.juli.logging.LogFactory;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.logging.Logger;
+
 
 @SpringBootApplication
 public class JenkinsJobApplication {
 
-	//public static Logger logger = (Logger)	LogFactory.getLog(JenkinsJobApplication.class);
+	public static Logger logger = 	LoggerFactory.getLogger(JenkinsJobApplication.class);
     @PostConstruct
 	public void init(){
 		System.out.println("Welome to Jenkins First Job Application!");
-		//logger.info("Welome to JenkinsJobApplication!");
+		logger.info("JenkinsJobApplication started.....");
 	}
 	public static void main(String[] args) {
+
+		logger.info("JenkinsJobApplication executed.....");
+
 		SpringApplication.run(JenkinsJobApplication.class, args);
 	}
 
