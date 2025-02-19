@@ -16,11 +16,11 @@ public class JenkinsJobApplication {
     @PostConstruct
 	public void init(){
 		System.out.println("Welome to Jenkins First Job Application!");
-		logger.info("JenkinsJobApplication started.....");
+		logger.info("Jenkins Job Application started.....");
 	}
 	public static void main(String[] args) {
 
-		logger.info("JenkinsJobApplication executed.....");
+		logger.info("Jenkins Job Application executed.....");
 
 		SpringApplication.run(JenkinsJobApplication.class, args);
 	}
